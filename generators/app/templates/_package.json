@@ -2,20 +2,12 @@
   "name": "<%= name %>",
   "version": "0.0.1",
   "description": "<%= description %>",
-  "homepage": "https://github.com/<%= username %>/<%= name %>#readme",
   "author": {
       "name": "<%= nickname %>",
       "email": "<%= email %>"
   },
   "files": ["src"],
   "main": "src/template.json",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/<%= username %>/<%= name %>.git"
-  },
-  "bugs": {
-    "url": "https://github.com/<%= username %>/<%= name %>/issues"
-  },
   "dependencies": {
   },
   "devDependencies": {

@@ -34,8 +34,8 @@ module.exports = yeoman.Base.extend({
         {
             type    : 'input',
             name    : 'username',
-            message : '作者英文名：',
-            default : this.user.github.username()
+            message : '作者英文名：'
+            // default : this.user.github.username()
         },
         {
             type    : 'input',
