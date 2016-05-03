@@ -1,0 +1,34 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.1",
+  "description": "<%= description %>",
+  "homepage": "https://github.com/<%= username %>/<%= name %>#readme",
+  "author": {
+      "name": "<%= nickname %>",
+      "email": "<%= email %>"
+  },
+  "files": ["src"],
+  "main": "src/template.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<%= username %>/<%= name %>.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<%= username %>/<%= name %>/issues"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+      "del": "^1.2.1",
+      "browser-sync": "^2.9.3",
+      "gulp": "^3.9.0",
+      "prismatic-injector": "https://github.com/<%= username %>/prismatic-injector.git",
+      "prismatic-injector-stub": "https://github.com/<%= username %>/prismatic-injector-stub.git"
+  },
+  "scripts": {
+    "test": "gulp",
+    "prebuild": "npm install",
+    "build": "gulp && node server"
+  },
+  "license": "MIT"
+}

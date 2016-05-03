@@ -1,0 +1,10 @@
+{
+    "name": "<%= name %>",
+    "description": "<%= description %>",
+    "scripts": [
+        "js/entry.js"
+    ],
+    "styles": [
+        "css/style.css"
+    ]
+}

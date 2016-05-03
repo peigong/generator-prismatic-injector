@@ -1,0 +1,1 @@
+require('prismatic-injector-stub')

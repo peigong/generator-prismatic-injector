@@ -12,7 +12,7 @@ describe('generator-prismatic-injector:app', function () {
 
   it('creates files', function () {
     assert.file([
-      'dummyfile.txt'
+      'server.js'
     ]);
   });
 });

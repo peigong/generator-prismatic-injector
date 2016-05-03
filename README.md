@@ -1,27 +1,38 @@
 # generator-prismatic-injector [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > 棱镜注射器模板生成器
 
-## Installation
+## 安装
 
-First, install [Yeoman](http://yeoman.io) and generator-prismatic-injector using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+首先，你要使用 [npm](https://www.npmjs.com/) 安装 [Yeoman](http://yeoman.io) （我们假定你已经提前装好了 [node.js](https://nodejs.org/)）。
 
 ```bash
 npm install -g yo
-npm install -g generator-prismatic-injector
 ```
 
-Then generate your new project:
+其次，`git clone`或下载棱镜注射器模板生成器（generator-prismatic-injector），并创建一个NPM链接。
+
+```bash
+git clone https://github.com/peigong/generator-prismatic-injector.git
+cd generator-prismatic-injector
+npm link
+```
+
+接下来，就可以生成一个棱镜注射器模板：
 
 ```bash
 yo prismatic-injector
 ```
 
-## Getting To Know Yeoman
+或：
 
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+```bash
+yo prismatic-injector {template-name}
+```
+
+## 了解 Yeoman
+
+ * Yeoman 是前端大杀器
+ * [了解更多有关 Yeoman的内容](http://yeoman.io/).
 
 ## License
 
