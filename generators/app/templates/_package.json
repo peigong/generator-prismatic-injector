@@ -22,8 +22,8 @@
       "del": "^1.2.1",
       "browser-sync": "^2.9.3",
       "gulp": "^3.9.0",
-      "prismatic-injector": "https://github.com/<%= username %>/prismatic-injector.git",
-      "prismatic-injector-stub": "https://github.com/<%= username %>/prismatic-injector-stub.git"
+      "prismatic-injector": "https://github.com/peigong/prismatic-injector.git",
+      "prismatic-injector-stub": "https://github.com/peigong/prismatic-injector-stub.git"
   },
   "scripts": {
     "test": "gulp",
