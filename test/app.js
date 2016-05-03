@@ -6,7 +6,13 @@ var helpers = require('yeoman-test');
 describe('generator-prismatic-injector:app', function () {
   before(function (done) {
     helpers.run(path.join(__dirname, '../generators/app'))
-      .withPrompts({someAnswer: true})
+      .withPrompts({
+          name: 'demo',
+          description: 'demo',
+          username: 'demo',
+          nickname: 'demo',
+          email: 'demo'
+      })
       .on('end', done);
   });
 
