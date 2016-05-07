@@ -48,6 +48,7 @@ gulp.task('serve', function(){
     }
     browserSync.init(settings);
 
+    gulp.watch('./src/**', ['build:templates', 'build:stub']);
     gulp.watch(['./dist/**'])
     .on('change', browserSync.reload);
 });
