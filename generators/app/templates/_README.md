@@ -18,9 +18,12 @@
 - 启动服务器桩 `node server`
 - 新开命令窗口，启动项目实时预览 `gulp serve`
 
-## 模板开发规范 ##
+## 接口规范 ##
 
-参见：[template.md](./template.md)
+- [针头脚本的构建](./doc/needle.md)
+- [模板选择服务接口规范](./doc/opt.md)
+- [模板开发规范](./doc/template.md)
+- [针头脚本公共方法](./doc/advanced.md)
 
 ## 服务器桩 ##
 
