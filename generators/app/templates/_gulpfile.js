@@ -7,6 +7,12 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync').create();
 
+const loc = './loc.json';
+var hostname = 'localhost';
+if(fs.existsSync(loc)){
+    hostname = require(loc).hostname;
+}
+
 // 导入配置文件
 var settings = require('./needle.json');
 if('random' === settings.namespace){ // 如果命名空间设置为'random'，则使用随机生成的标识
@@ -101,7 +107,7 @@ gulp.task('serve', ['build:inject'], function(){
                         snippet,
                         '<script id="',
                         inject.script.id,
-                        '" charset="utf-8" src="http://localhost:3080/',
+                        `" charset="utf-8" src="http://${ hostname }:3080/`,
                         inject.script.filename,
                         '"></script>',
                         match

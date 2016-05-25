@@ -78,6 +78,7 @@ module.exports = yeoman.Base.extend({
     this.fs.copy(this.templatePath('_gitignore'), this.destinationPath('.gitignore'));
     this.fs.copy(this.templatePath('_server.js'), this.destinationPath('server.js'));
     this.fs.copy(this.templatePath('_needle.json'), this.destinationPath('needle.json'));
+    this.fs.copy(this.templatePath('_loc.json'), this.destinationPath('loc.json'));
 
     this.fs.copyTpl(this.templatePath('_gulpfile.js'), this.destinationPath('gulpfile.js'), data);
     this.fs.copyTpl(this.templatePath('_LICENSE'), this.destinationPath('LICENSE'), data);
